@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet" />
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .outside-container {
+        display: flex;
+        justify-content: center;
+        padding: 6em;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 2em;
+      }
+      .customer-comments {
+        grid-column: span 2;
+      }
+      h1 {
+        color: hsl(300, 43%, 22%);
+        font-weight: 700;
+        font-family: "Outfit", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      .text-box {
+        max-width: 450px;
+        color: hsl(300, 43%, 22%);
+      }
+      p,
+      .customer-comments {
+        font-size: 15px;
+        margin: 0;
+        font-family: "Outfit", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        line-height: 1.8em;
+      }
+      .light-purple {
+        background-color: hsl(300, 24%, 96%);
+        max-width: 350px;
+        font-weight: 700;
+        margin-bottom: 0.8em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 2em;
+        color: hsl(300, 43%, 22%);
+        border-radius: 0.5cap;
+      }
+      .yellow-star {
+        color: orange;
+        padding-right: 0.8em;
+      }
+      .purple-box > .rate-second {
+        margin-left: 2em;
+      }
+      .purple-box > .rate-third {
+        margin-left: 4em;
+      }
+      .customer-comments {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2em;
+        color: hsl(0, 0%, 100%);
+      }
+
+      .dark-purple {
+        max-width: 300px;
+        height: 200px;
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 0.8cap;
+        padding: 1.5em;
+      }
+      .profile-photo {
+        border-radius: 50%;
+        height: 50px;
+        margin-right: 1em;
+        float: left;
+      }
+      .customer-words {
+        clear: left;
+        margin-top: 2em;
+      }
+      .profile-intro > .bold-text {
+        font-weight: 700;
+      }
+      .profile-intro > .pink-job-title {
+        color: hsl(333, 80%, 67%);
+      }
+      .customer-comments > .box2 {
+        margin-top: 1.5em;
+      }
+      .customer-comments > .box3 {
+        margin-top: 3em;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media (max-width: 600px) {
+        body {
+          margin: 0;
+        }
+        .outside-container {
+          margin: 0;
+          max-width: 600px;
+          padding: 2em;
+        }
+
+        .grid-container {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        h1,
+        p {
+          text-align: center;
+        }
+        .light-purple {
+          max-width: 100%;
+        }
+        .purple-box {
+          text-align: center;
+        }
+        .purple-box > .rate-second {
+          margin-left: 0;
+        }
+        .purple-box > .rate-third {
+          margin-left: 0;
+        }
+        .customer-comments {
+          flex-direction: column;
+          gap: 0;
+        }
+        .dark-purple {
+          max-width: 100%;
+        }
+        .yellow-star {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outside-container">
+      <div class="grid-container">
+        <div class="flex-container brief">
+          <h1 class="text-content">
+            10,000+ of our <br />users love our<br />
+            products.
+          </h1>
+          <div class="text-box">
+            <p class="text-content text-brief">
+              We only provide great products combined with excellent customer
+              service.See what our satisfied customers are saying about our
+              services.
+            </p>
+          </div>
+        </div>
+        <div class="flex-container rate">
+          <div class="purple-box">
+            <div class="light-purple rate-first">
+              <span class="yellow-star"
+                >&#9733; &#9733; &#9733; &#9733; &#9733;
+              </span>
+              Rated 5 Stars in Reviews
+            </div>
+            <div class="light-purple rate-second">
+              <span class="yellow-star"
+                >&#9733; &#9733; &#9733; &#9733; &#9733;
+              </span>
+              Rated 5 Stars in Report Guru
+            </div>
+            <div class="light-purple rate-third">
+              <span class="yellow-star"
+                >&#9733; &#9733; &#9733; &#9733; &#9733;
+              </span>
+              Rated 5 Stars in BestTech
+            </div>
+          </div>
+        </div>
+        <div class="flex-container customer-comments">
+          <div class="dark-purple box1">
+            <div class="profile-intro">
+              <img
+                class="profile-photo"
+                src="./images/image-colton.jpg"
+                alt="colton profile" />
+              <span class="bold-text">Colton Smith</span> <br />
+              <span class="pink-job-title">Verified Buyer</span>
+            </div>
+            <div class="customer-words">
+              "We needed the same printed design as the one we had ordered a
+              week prior. Not only did they find the original order, but we also
+              received it in time. Excellent!"
+            </div>
+          </div>
+          <div class="dark-purple box2">
+            <div class="profile-intro">
+              <img
+                class="profile-photo"
+                src="images/image-irene.jpg"
+                alt="irene profile" /><span class="bold-text"
+                >Irene Roberts</span
+              ><br />
+              <span class="pink-job-title">Verified Buyer</span>
+            </div>
+            <div class="customer-words">
+              Customer service is always excellent and very quick turn around.
+              Completely delighted with the simplicity of the purchase and the
+              speed of delivery."
+            </div>
+          </div>
+          <div class="dark-purple box3">
+            <div class="profile-intro">
+              <img
+                class="profile-photo"
+                src="./images/image-anne.jpg"
+                alt="anne profile" /><span class="bold-text">Anne Wallace</span>
+              <br /><span class="pink-job-title">Verified Buyer</span>
+            </div>
+            <div class="customer-words">
+              "Put an order with this company and can only praise them for the
+              very high standard. Will definitely use them again and recommend
+              them to everyone!"
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Cici Chen</a>.
+    </div>
+  </body>
+</html>
